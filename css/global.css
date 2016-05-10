@@ -1,0 +1,235 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(https://fonts.googleapis.com/css?family=Oxygen);
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 9, ../scss/global.scss */
+body {
+  font-family: "Oxygen", sans-serif;
+  font-size: 24px;
+}
+/* line 13, ../scss/global.scss */
+body .header {
+  background: url("../img/backgHeader.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 1500px;
+}
+/* line 18, ../scss/global.scss */
+body .header .logo {
+  margin: 20px 60px;
+  width: 200px;
+}
+@media screen and (max-width: 992px) {
+  /* line 13, ../scss/global.scss */
+  body .header {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+    height: 600px;
+  }
+  /* line 26, ../scss/global.scss */
+  body .header .logo {
+    width: 60%;
+    margin: 40px 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 13, ../scss/global.scss */
+  body .header {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+    height: 300px;
+  }
+  /* line 35, ../scss/global.scss */
+  body .header .logo {
+    width: 40%;
+    margin: 40px 60px;
+  }
+}
+/* line 43, ../scss/global.scss */
+body .section_para {
+  background: url("../img/sectionParaBack.png") no-repeat scroll;
+  background-size: cover;
+  height: 1500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 51, ../scss/global.scss */
+body .section_para p {
+  background-color: #fff;
+  color: #d81f1f;
+  width: 40%;
+  height: auto;
+  padding: 5%;
+}
+@media screen and (max-width: 992px) {
+  /* line 43, ../scss/global.scss */
+  body .section_para {
+    font-size: 14px;
+    background-size: cover;
+    height: 600px;
+    align-items: flex-end;
+  }
+  /* line 66, ../scss/global.scss */
+  body .section_para p {
+    width: 60%;
+    margin-bottom: 20%;
+  }
+}
+/* line 73, ../scss/global.scss */
+body .section_poly {
+  background: url("../img/polygone.jpg") no-repeat center scroll;
+  background-size: cover;
+  height: 1500px;
+}
+/* line 78, ../scss/global.scss */
+body .section_poly .logo {
+  margin: 0px 60px;
+  width: 200px;
+}
+@media screen and (max-width: 992px) {
+  /* line 73, ../scss/global.scss */
+  body .section_poly {
+    font-size: 14px;
+    background-size: 100%;
+    height: 600px;
+  }
+  /* line 88, ../scss/global.scss */
+  body .section_poly .logo {
+    margin: 50px 60px;
+    width: 100px;
+  }
+}
+/* line 97, ../scss/global.scss */
+body footer {
+  background-color: #d81f1f;
+}
+/* line 101, ../scss/global.scss */
+body footer .menu_footer {
+  display: flex;
+  flex-direction: row;
+}
+/* line 106, ../scss/global.scss */
+body footer .menu_footer li {
+  background-color: #9d0804;
+  text-align: center;
+  flex-grow: 1;
+  padding: 5px 0;
+  width: 15%;
+  border-right: 2px solid #fe0b04;
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+/* line 117, ../scss/global.scss */
+body footer .menu_footer li:last-child {
+  flex-grow: 2;
+  width: 50%;
+  border-right: none;
+}
+/* line 122, ../scss/global.scss */
+body footer .menu_footer li:hover, body footer .menu_footer li:active {
+  background-color: #d81f1f;
+}
+/* line 125, ../scss/global.scss */
+body footer .menu_footer a {
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  /* line 131, ../scss/global.scss */
+  body footer .menu_footer li {
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+  }
+  /* line 137, ../scss/global.scss */
+  body footer .menu_footer li:hover, body footer .menu_footer li:active {
+    background-color: #d81f1f;
+  }
+  /* line 140, ../scss/global.scss */
+  body footer .menu_footer a {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* line 146, ../scss/global.scss */
+  body footer .footer-logo {
+    width: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 151, ../scss/global.scss */
+  body footer .footer-logo {
+    width: 20px;
+  }
+}

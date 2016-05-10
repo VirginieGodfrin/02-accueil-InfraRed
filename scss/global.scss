@@ -1,0 +1,156 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "base";
+@import "compass/reset";
+@import "compass/css3";
+
+body {
+    font-family: $oxygen;
+    font-size: $fSbig;
+
+    .header{
+		background: url("../img/backgHeader.jpg");
+		@include bg_fix_cov;
+		height : $big-height;
+
+		.logo{
+			margin: 20px 60px ;
+			width: 200px;
+		}
+
+		@media screen and (max-width: $break-dk-norm){
+			@include bg_scroll;
+			height : 600px;
+      		.logo {
+      			width: 60%;
+      			margin: 40px 60px ;
+      		}
+    	}
+
+    	@media screen and (max-width: $break-tab){
+			@include bg_scroll;
+			height : 300px;
+      		.logo {
+      			width: 40%;
+      			margin: 40px 60px ;
+      		}
+    	}
+
+	}
+
+	.section_para{
+	background: url("../img/sectionParaBack.png") no-repeat scroll;
+	background-size: cover;
+	height: 1500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+		p{
+			background-color: #fff;
+			color: #d81f1f;
+			width: 40%;
+			height: auto;
+			padding: 5%;
+
+		}
+
+		@media screen and (max-width: $break-dk-norm){
+      		font-size: $fSlittle;
+      		background-size: cover;
+      		height: 600px;
+      		align-items: flex-end;
+
+      		p{
+      			width: 60%;
+      			margin-bottom: 20%;
+      		}
+    	}
+	}
+
+	.section_poly{
+	background: url("../img/polygone.jpg") no-repeat center scroll;
+	background-size: cover;
+	height: 1500px;
+
+		.logo{
+			margin: 0px 60px ;
+			width: 200px;
+		}
+
+		@media screen and (max-width: $break-dk-norm){
+      		font-size: $fSlittle;
+      		background-size: 100%;
+      		height: 600px;
+
+      		.logo{
+			margin: 50px 60px ;
+			width: 100px;
+			}
+    	}
+	}
+
+	
+
+	footer{
+
+		background-color: #d81f1f;
+
+		.menu_footer{
+    		display: flex;
+    		flex-direction: row;
+		}
+
+		.menu_footer li{
+			background-color: #9d0804;
+			text-align: center;
+			flex-grow: 1;
+			padding: 5px 0;
+			width: 15%;
+			border-right: 2px solid #fe0b04;
+			transition-property: background-color;
+	    	transition-duration: 1s;
+	    	transition-timing-function: linear;
+		}
+		.menu_footer li:last-child{
+			flex-grow: 2;
+			width: 50%;
+			border-right: none;
+		}
+		.menu_footer li:hover, .menu_footer li:active {
+    		background-color: #d81f1f;
+		}
+		.menu_footer a {
+			width: 100%;
+		}
+
+		@media screen and (min-width: $break-phone){
+
+			.menu_footer li{
+				transition-property: background-color;
+	    		transition-duration: 1s;
+	    		transition-timing-function: linear;
+			}
+
+			.menu_footer li:hover, .menu_footer li:active {
+	    		background-color: #d81f1f;
+			}
+			.menu_footer a {
+				width: 100%;
+			}
+    	}
+
+    	@media screen and (max-width: $break-dk-norm){
+			.footer-logo{
+				width: 30px;
+			}
+    	}
+    	@media screen and (max-width: $break-tab){
+			.footer-logo{
+				width: 20px;
+			}
+    	}
+	}
+}
